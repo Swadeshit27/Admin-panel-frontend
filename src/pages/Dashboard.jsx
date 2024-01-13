@@ -2,7 +2,7 @@
 import Layout from "../Components/Layout";
 
 
-const Dashboard = () => {
+const DashBoard = () => {
     return (
         <Layout header="dashboard">
            <div>dashboard</div>
@@ -10,4 +10,4 @@ const Dashboard = () => {
     )
 }
 
-export default Dashboard
+export default DashBoard
