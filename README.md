@@ -17,13 +17,6 @@ The main purpose of this project is if anyone need any admin pannel they can eas
 <!-- [GitHub contributors](https://img.shields.io/github/contributors/kunjgit/GameZone) -->
 <!-- [Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Fkunjgit.github.io%2FGameZone%2F) -->
 
-# Setup 
-
-1. Fork the repository
-2. Clone this repository `git clone "url of the repo"`
-
-5. Well done 🥳. You completed the setup.
-
 ## Getting Started
 
 Below are the steps to follow to setup and contribute to this project:
