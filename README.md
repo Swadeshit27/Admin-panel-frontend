@@ -2,7 +2,7 @@
 
 An admin panel or a control panel is a system that enables administrators and other website workers to conduct various tasks like monitoring, maintaining, and controlling certain business processes. 
 
-The main purpose of this project is if anyone need any admin pannel they can easily clone  this project and do their works.
+The main purpose of this project is if anyone need any admin panel they can easily clone  this project and do their works.We will develop e-commerce website administration panel.
 
 # Tech tools
 1. React Js
