@@ -1,10 +1,11 @@
 import { Route, Routes } from "react-router-dom"
 import Dashboard from "../Pages/Dashboard"
-import Products from "../Pages/Products"
-import Customers from "../Pages/Customers"
-import Category from "../Pages/category"
-import Reports from "../Pages/Reports"
-import Setting from "../Pages/Setting"
+import Products from "../pages/Products"
+import Customers from "../pages/Customers"
+import Category from "../pages/Category"
+import Reports from "../pages/Reports"
+import Setting from "../pages/Setting"
+
 
 
 const MainContent = () => {
