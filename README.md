@@ -1,3 +1,6 @@
+<img src="https://github.com/Swadeshit27/Admin-panel-frontend/assets/97722877/9beadf06-ca31-46ac-9ab2-7eefa23095d4" width="350" height="250" align="center" />
+
+
 # Admin pannel
 
 An admin panel or a control panel is a system that enables administrators and other website workers to conduct various tasks like monitoring, maintaining, and controlling certain business processes. 
@@ -7,6 +10,8 @@ The main purpose of this project is if anyone need any admin panel they can easi
 # Tech tools
 1. React Js
 2. Tailwind CSS
+
+
 
 <!-- [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/fgwk4XZfxG) -->
 
