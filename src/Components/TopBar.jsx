@@ -1,9 +1,16 @@
 import { FaMagnifyingGlass, FaCircleUser } from "react-icons/fa6";
 import { IoNotifications } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
-
-
+import { useNavigate } from "react-router-dom";
 function TopBar() {
+
+    const navigate = useNavigate();
+
+    const handleLoginClick = () => {
+    navigate('/login');
+    };
+    
+
     return (
         <div className="absolute w-full h-20 bg-[#51577d] px-10 flex justify-between items-center">
             <div className="flex items-center  text-gray-200">
@@ -14,6 +21,12 @@ function TopBar() {
                 <IoNotifications className="cursor-pointer mx-2" />
                 <MdEmail className="cursor-pointer mx-2" />
                 <FaCircleUser className="cursor-pointer mx-2" />
+                
+            </div>
+            <div>
+            <button className="cursor-pointer" onClick={handleLoginClick} style={{'color':'white'}}>
+                    Login
+                </button>
             </div>
         </div>
     )

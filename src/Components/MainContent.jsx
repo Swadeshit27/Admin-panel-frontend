@@ -5,6 +5,7 @@ import Reports from "../pages/Reports"
 import Setting from "../pages/Setting"
 import Dashboard from "../pages/Dashboard"
 import Products from "../pages/Products"
+import Login from "../pages/Login"
 
 
 
@@ -13,6 +14,7 @@ const MainContent = () => {
         <div className=" w-full h-full bg-[#282d55]">
             <Routes>
                 <Route path={'/'} element={<Dashboard/>} />
+                <Route path={'/login'} element={<Login/>} />
                 <Route path={'/products'} element={<Products />} />
                 <Route path={'/customers'} element={<Customers />} />
                 <Route path={'/category'} element={<Category />} />
