@@ -9,6 +9,15 @@ import {
 
 import { Box } from "@mui/material";
 
+const getRandomDate = (start, end) => {
+  const startDate = new Date(start);
+  const endDate = new Date(end);
+  const randomTime =
+    startDate.getTime() +
+    Math.random() * (endDate.getTime() - startDate.getTime());
+  return new Date(randomTime);
+};
+
 const Table = () => {
   const [data, setData] = useState([]);
   useEffect(() => {
@@ -39,27 +48,24 @@ const Table = () => {
         id: "name",
         header: "Name",
         size: 250,
-        Cell: ({ renderedCellValue, row }) => {
-          console.log(row.original);
-          return (
-            <Box
-              sx={{
-                display: "flex",
-                alignItems: "center",
-                gap: "1rem",
-              }}
-            >
-              <img
-                alt="avatar"
-                height={30}
-                src={row.original.picture.thumbnail}
-                loading="lazy"
-                style={{ borderRadius: "50%" }}
-              />
-              <span>{renderedCellValue}</span>
-            </Box>
-          );
-        },
+        Cell: ({ renderedCellValue, row }) => (
+          <Box
+            sx={{
+              display: "flex",
+              alignItems: "center",
+              gap: "1rem",
+            }}
+          >
+            <img
+              alt="avatar"
+              height={30}
+              src={row.original.picture.thumbnail}
+              loading="lazy"
+              style={{ borderRadius: "50%" }}
+            />
+            <span>{renderedCellValue}</span>
+          </Box>
+        ),
       },
       {
         accessorKey: "email",
@@ -76,9 +82,22 @@ const Table = () => {
         size: 300,
       },
       {
-        accessorKey: "jobTitle", //hey a simple column for once
-        header: "Job Title",
+        accessorKey: "citystate",
+        header: "city & state",
         size: 350,
+      },
+      {
+        accessorFn: () => getRandomDate("2022-01-01", "2023-01-01"),
+        id: "startDate",
+        header: "Start Date",
+        filterVariant: "date",
+        Cell: ({ cell }) => cell.getValue()?.toLocaleDateString(),
+        Header: ({ column }) => <em>{column.columnDef.header}</em>,
+        muiFilterTextFieldProps: {
+          sx: {
+            minWidth: "250px",
+          },
+        },
       },
     ],
     []
@@ -86,7 +105,7 @@ const Table = () => {
 
   const table = useMaterialReactTable({
     columns,
-    data, //data must be memoized or stable (useState, useMemo, defined outside of this component, etc.)
+    data, 
     enableColumnFilterModes: true,
     enableColumnOrdering: true,
     enableGrouping: true,
