@@ -4,13 +4,19 @@ import TopBar from "./Components/TopBar";
 import './assets/App.css'
 import Home from './Components/Home'
 import Header from './Components/Header'
+import { useState } from "react";
 
 
-const App = () => {
+function App() {
+  const[openSidebarToggle,setOpenSidebarToggle]=useState(false)
+
+  const OpenSidebar=()=>{
+    setOpenSidebarToggle(!openSidebarToggle)
+  }
   return (
     <div className="grid-container">
-     <Header/>
-     <Sidebar/>
+     <Header OpenSidebar={OpenSidebar}/>
+     <Sidebar openSidebarToggle={openSidebarToggle}  OpenSidebar={OpenSidebar}/>
      <Home />
     </div>
   );
