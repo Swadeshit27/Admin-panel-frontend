@@ -12,8 +12,8 @@ export default function Form() {
           setDetailsEntered(false);
       } else {
           setDetailsEntered(true);
-          // Redirect to other page
-          window.location.href = '/'; // Replace '/other-page' with the actual path
+        
+          window.location.href = '/'; 
       }
   };
 
