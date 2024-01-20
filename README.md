@@ -11,17 +11,6 @@ The main purpose of this project is if anyone need any admin panel they can easi
 1. React Js
 2. Tailwind CSS
 
-
-
-<!-- [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/fgwk4XZfxG) -->
-
-<!-- [GitHub issues](https://img.shields.io/github/issues/kunjgit/GameZone) -->
-<!-- [GitHub forks](https://img.shields.io/github/forks/kunjgit/GameZone) -->
-<!-- [GitHub pull requests](https://img.shields.io/github/issues-pr/kunjgit/GameZone) -->
-<!-- [GitHub Repo stars](https://img.shields.io/github/stars/kunjgit/GameZone?style=social) -->
-<!-- [GitHub contributors](https://img.shields.io/github/contributors/kunjgit/GameZone) -->
-<!-- [Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Fkunjgit.github.io%2FGameZone%2F) -->
-
 ## Getting Started
 
 Below are the steps to follow to setup and contribute to this project:

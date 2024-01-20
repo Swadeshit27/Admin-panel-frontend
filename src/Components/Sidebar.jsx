@@ -1,54 +1,76 @@
-import React from 'react';
-import {BsCart3,BsGrid1X2Fill,BsFillArchiveFill,BsFillGrid3X3GapFill,BsPeopleFill,BsListCheck,BsMenuButtonWideFill,BsFillGearFill} from 'react-icons/bs'
-function Sidebar({openSidebarToggle,OpenSidebar}) {
-  return (
-    <aside id="sidebar" className={openSidebarToggle? "sidebar-responsive":""}>
-      <div className='sidebar-title'>
-        <div className='sidebar-brand'>
-          <BsCart3 className='icon_header'/>SHOP
-          </div>
-          <span className='icon close_icon onClick={OpenSidebar}'>X</span>
-      </div>
+import {
+  MdAdminPanelSettings,
+  MdSpaceDashboard,
+  MdReport,
+  MdShoppingBasket,
+} from "react-icons/md";
+import { BiCategoryAlt } from "react-icons/bi";
+import { PiUsersThreeFill } from "react-icons/pi";
+import { FaGear } from "react-icons/fa6";
+import { Link } from "react-router-dom";
 
-      <ul className='sidebar-list'>
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsGrid1X2Fill className='icon'/>Dashboard
-          </a>
-        </li>
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsFillArchiveFill className='icon'/>Products
-          </a>
-        </li>
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsFillGrid3X3GapFill className='icon'/>Categories
-          </a>
-        </li>
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsPeopleFill className='icon'/>Customers
-          </a>
-        </li>
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsListCheck className='icon'/>Inventory
-          </a>
-        </li>
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsMenuButtonWideFill className='icon'/>Reports
-          </a>
-        </li>
-        <li className='sidebar-list-item'>
-          <a href="">
-            <BsFillGearFill className='icon'/>Setting
-          </a>
-        </li>
+const ListItems = [
+  {
+    name: "dashboard",
+    link: "/",
+    active: true,
+    icon: <MdSpaceDashboard size={20} />,
+  },
+  {
+    name: "products",
+    link: "/products",
+    active: false,
+    icon: <MdShoppingBasket size={20} />,
+  },
+  {
+    name: "category",
+    link: "/category",
+    active: false,
+    icon: <BiCategoryAlt size={20} />,
+  },
+  {
+    name: "customers",
+    link: "/customers",
+    active: false,
+    icon: <PiUsersThreeFill size={20} />,
+  },
+  {
+    name: "reports",
+    link: "/reports",
+    active: false,
+    icon: <MdReport size={20} />,
+  },
+  {
+    name: "setting",
+    link: "/setting",
+    active: false,
+    icon: <FaGear size={20} />,
+  },
+];
+
+const Sidebar = () => {
+  return (
+    <div className="w-full h-full bg-[#1e2136] ">
+      <div className="flex items-center justify-center text-gray-100 pt-6">
+        <MdAdminPanelSettings size={40} />
+        <h1 className="text-2xl font-semibold ms-3">Admin_Panel</h1>
+      </div>
+      <ul className="my-20 px-4">
+        {ListItems.map((item, i) => (
+          <Link
+            to={item.link}
+            key={i}
+            className={`flex items-center  font-medium  text-gray-300 ${
+              item.active && "bg-slate-400/40"
+            } py-2 ps-6 my-2 cursor-pointer rounded-md`}
+          >
+            {item.icon}
+            <li className="ms-3 capitalize">{item.name}</li>
+          </Link>
+        ))}
       </ul>
-    </aside>
+    </div>
   );
-}
+};
 
 export default Sidebar;
