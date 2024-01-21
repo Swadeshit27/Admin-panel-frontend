@@ -1,11 +1,11 @@
-import React from "react";
 import Layout from "../Components/Layout";
+import Table from "../Components/Table";
 
 const Customers = () => {
   return (
     <>
       <Layout header="customers">
-        <div>customers</div>
+        <Table />
       </Layout>
     </>
   );
