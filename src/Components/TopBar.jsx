@@ -12,7 +12,7 @@ function TopBar() {
     
 
     return (
-        <div className="absolute w-full h-20 bg-[#51577d] px-10 flex justify-between items-center">
+        <div className="fixed top-0 w-[80%] z-50 h-16 bg-[#51577d] px-10 flex justify-between items-center">
             <div className="flex items-center  text-gray-200">
                 <FaMagnifyingGlass size={20} />
                 <input type="text" placeholder="Search" className="ms-2 bg-transparent border-b outline-none" />
