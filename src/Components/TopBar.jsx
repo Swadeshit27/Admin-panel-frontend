@@ -7,10 +7,9 @@ function TopBar() {
     const navigate = useNavigate();
 
     const handleLoginClick = () => {
-    navigate('/login');
-    };
-    
-
+        navigate('/login');
+        };
+        
     return (
         <div className="fixed top-0 w-[80%] z-50 h-16 bg-[#51577d] px-10 flex justify-between items-center">
             <div className="flex items-center  text-gray-200">

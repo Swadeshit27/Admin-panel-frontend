@@ -1,11 +1,9 @@
 import  React,{useState} from 'react';
 
 export default function Form() {
-
-
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [detailsEntered, setDetailsEntered] = useState(true);
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+    const [detailsEntered, setDetailsEntered] = useState(true);
 
   const handleLogin = () => {
       if (email.trim() === '' || password.trim() === '') {
@@ -46,7 +44,7 @@ export default function Form() {
                 <div className='mt-8 flex justify-between items-center'>
                     <div>
                         <input  type="checkbox" id='remember'/>
-                        <label className='ml-2 font-medium text-base' for="remember">Remember</label>
+                        <label className='ml-2 font-medium text-base' htmlFor="remember">Remember</label>
                     </div>
                     <button className='font-medium text-base text-violet-500'>Forgot password</button>
                 </div>
