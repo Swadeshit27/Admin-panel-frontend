@@ -11,7 +11,7 @@ import Login from "../pages/Login"
 
 const MainContent = () => {
     return (
-        <div className=" w-full h-full bg-[#282d55] absolute top-0 overflow-y-scroll">
+        <div className=" w-full h-full bg-neutral-100 dark:bg-[#282d55] absolute top-0 overflow-y-scroll">
             <Routes>
                 <Route path={'/'} element={<Dashboard/>} />
                 <Route path={'/login'} element={<Login/>} />
