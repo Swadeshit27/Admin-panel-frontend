@@ -23,8 +23,7 @@ export default function Form() {
                 <div className='flex flex-col'>
                     <label className='text-lg font-medium'>Email</label>
                     <input 
-
-                        type="email"
+                       type="email"
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                         className='w-full border-2 border-gray-100 rounded-xl p-4 mt-1 bg-transparent'
