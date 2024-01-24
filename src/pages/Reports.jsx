@@ -2,7 +2,7 @@ import Layout from "../Components/Layout";
 
 const Reports = () => {
   return (
-    <Layout header="products">
+    <Layout header="reports">
       <div>Reports</div>
     </Layout>
   );
