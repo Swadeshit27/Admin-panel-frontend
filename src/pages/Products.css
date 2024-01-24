@@ -1,0 +1,49 @@
+/* Products.css */
+
+.product-table {
+    width: 100%;
+    border-collapse: separate; /* Use separate border-collapse to apply border-spacing */
+    border-spacing: 0 10px; /* Add a gap of 10px between table rows */
+    margin-top: 20px;
+    color: #c12020; /* Change text color */
+  }
+  
+  .product-table th,
+  .product-table td {
+    border: 1px solid #ddd;
+    padding: 10px; /* Increase padding for better spacing */
+    text-align: left;
+  }
+  
+  .product-table th {
+    background-color: #f2f2f2;
+  }
+  
+  .product-table td button {
+    margin-right: 5px;
+  }
+  
+  .product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Increase gap between form fields */
+  }
+  
+  .product-form-container {
+    border: 2px solid #eb1313; /* Increase border width for visibility */
+    padding: 15px; /* Add padding around the form */
+    border-radius: 8px; /* Add border-radius for rounded corners */
+    background-color: #b6eef6; /* Add a background color */
+  }
+  
+  .product-form label {
+    display: flex;
+    flex-direction: column;
+    color: black ;/* Change text color */
+    font-size: larger;
+  }
+  
+  .product-form input {
+    padding: 10px; /* Increase padding for better spacing */
+    color: black; /* Change text color */
+}
