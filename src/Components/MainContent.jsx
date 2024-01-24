@@ -6,9 +6,6 @@ import Setting from "../pages/Setting"
 import Dashboard from "../pages/Dashboard"
 import Products from "../pages/Products"
  import Login from "../pages/Login"
-
-
-
 const MainContent = () => {
     return (
         <div className=" w-full h-full bg-neutral-100 dark:bg-[#282d55] absolute top-0 overflow-y-scroll">
