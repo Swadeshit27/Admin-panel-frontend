@@ -1,17 +1,17 @@
-/* Products.css */
+]
 
 .product-table {
     width: 100%;
-    border-collapse: separate; /* Use separate border-collapse to apply border-spacing */
-    border-spacing: 0 10px; /* Add a gap of 10px between table rows */
+    border-collapse: separate;
+    border-spacing: 0 10px; 
     margin-top: 20px;
-    color: #c12020; /* Change text color */
+    color: #c12020; 
   }
   
   .product-table th,
   .product-table td {
     border: 1px solid #ddd;
-    padding: 10px; /* Increase padding for better spacing */
+    padding: 10px; 
     text-align: left;
   }
   
@@ -26,24 +26,24 @@
   .product-form {
     display: flex;
     flex-direction: column;
-    gap: 15px; /* Increase gap between form fields */
+    gap: 15px; 
   }
   
   .product-form-container {
-    border: 2px solid #eb1313; /* Increase border width for visibility */
-    padding: 15px; /* Add padding around the form */
-    border-radius: 8px; /* Add border-radius for rounded corners */
-    background-color: #b6eef6; /* Add a background color */
+    border: 2px solid #eb1313; 
+    padding: 15px; 
+    border-radius: 8px; 
+    background-color: #b6eef6;
   }
   
   .product-form label {
     display: flex;
     flex-direction: column;
-    color: black ;/* Change text color */
+    color: black ;
     font-size: larger;
   }
   
   .product-form input {
-    padding: 10px; /* Increase padding for better spacing */
-    color: black; /* Change text color */
+    padding: 10px; 
+    color: black; 
 }
