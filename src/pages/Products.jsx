@@ -2,10 +2,10 @@
 import React, { useState } from "react";
 import Modal from "react-modal";
 import Layout from "../Components/Layout";
-import "./Products.css"; // Import the CSS file for styling
+import "./Products.css"; 
 
 const Products = () => {
-  // State to manage modals, form data, and selected product for editing
+  
   const [isEditModalOpen, setIsEditModalOpen] = useState(false);
   const [isPhotoModalOpen, setIsPhotoModalOpen] = useState(false);
   const [formData, setFormData] = useState({
@@ -22,12 +22,13 @@ const Products = () => {
   const [productsData, setProductsData] = useState([
     { id: 1, productName: "Product 1", photo: "image1.jpg", description: "Description 1", category: "Category 1", price: 50, discount: 10 },
     { id: 2, productName: "Product 2", photo: "image2.jpg", description: "Description 2", category: "Category 2", price: 30, discount: 5 },
-  
+
   ]);
+
 
   const handleFormSubmit = () => {
     if (selectedProductId !== null) {
-  
+   
       const updatedProducts = productsData.map((product) =>
         product.id === selectedProductId
           ? {
@@ -38,8 +39,8 @@ const Products = () => {
           : product
       );
       setProductsData(updatedProducts);
-    } 
-    else {
+    } else {
+ 
       const newProduct = {
         id: productsData.length + 1,
         ...formData,
@@ -47,6 +48,7 @@ const Products = () => {
       };
       setProductsData([...productsData, newProduct]);
     }
+
     setFormData({
       productName: "",
       photo: null,
@@ -60,22 +62,24 @@ const Products = () => {
     setIsEditModalOpen(false);
   };
 
+ 
   const handleFileChange = (e) => {
     const file = e.target.files[0];
     setFormData({ ...formData, photo: file });
-    setIsImageUpdated(true); // Set image update state to true
+    setIsImageUpdated(true); 
   };
+
   const handleEditProduct = (product) => {
     setFormData({ ...product });
     setSelectedProductId(product.id);
-    setIsImageUpdated(false); // Reset image update state
+    setIsImageUpdated(false); 
     setIsEditModalOpen(true);
   };
+
   const handleDeleteProduct = (productId) => {
     const updatedProducts = productsData.filter((product) => product.id !== productId);
     setProductsData(updatedProducts);
   };
-
   const handleOpenPhotoModal = (product) => {
     setFormData({ ...product });
     setIsPhotoModalOpen(true);
@@ -130,6 +134,7 @@ const Products = () => {
         </tbody>
       </table>
 
+      {/* Add New Product Modal */}
       <Modal
         isOpen={isEditModalOpen}
         onRequestClose={() => setIsEditModalOpen(false)}
@@ -138,6 +143,7 @@ const Products = () => {
         <h2>{selectedProductId !== null ? "Edit Product" : "Add New Product"}</h2>
         <div className="product-form-container">
           <form className="product-form">
+            {/* Form fields go here */}
             <label>
               Product Name:
               <input
@@ -151,7 +157,7 @@ const Products = () => {
               Photo:
               <input
                 type="file"
-                accept="image/*" // Specify that only image files are allowed
+                accept="image/*" 
                 onChange={(e) => handleFileChange(e)}
               />
             </label>
