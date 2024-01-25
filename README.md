@@ -1,21 +1,15 @@
+<img src="https://github.com/Swadeshit27/Admin-panel-frontend/assets/97722877/9beadf06-ca31-46ac-9ab2-7eefa23095d4" width="350" height="250" align="center" />
+
+
 # Admin pannel
 
 An admin panel or a control panel is a system that enables administrators and other website workers to conduct various tasks like monitoring, maintaining, and controlling certain business processes. 
 
-The main purpose of this project is if anyone need any admin pannel they can easily clone  this project and do their works.
+The main purpose of this project is if anyone need any admin panel they can easily clone  this project and do their works.We will develop e-commerce website administration panel.
 
 # Tech tools
 1. React Js
 2. Tailwind CSS
-
-<!-- [![Discord](https://img.shields.io/badge/Discord-%235865F2.svg?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/fgwk4XZfxG) -->
-
-<!-- [GitHub issues](https://img.shields.io/github/issues/kunjgit/GameZone) -->
-<!-- [GitHub forks](https://img.shields.io/github/forks/kunjgit/GameZone) -->
-<!-- [GitHub pull requests](https://img.shields.io/github/issues-pr/kunjgit/GameZone) -->
-<!-- [GitHub Repo stars](https://img.shields.io/github/stars/kunjgit/GameZone?style=social) -->
-<!-- [GitHub contributors](https://img.shields.io/github/contributors/kunjgit/GameZone) -->
-<!-- [Website](https://img.shields.io/website?down_color=red&down_message=offline&up_color=blue&up_message=online&url=https%3A%2F%2Fkunjgit.github.io%2FGameZone%2F) -->
 
 ## Getting Started
 
