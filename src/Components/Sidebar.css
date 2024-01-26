@@ -1,0 +1,40 @@
+@media (max-width : 670px) {
+    .capitalize {
+        display: none;
+    }
+}
+
+.list {
+    margin-left: 2vw;
+}
+
+.ldt {
+    margin-left: 3vw;
+    min-width: 100px;
+    min-height: 20px;
+}
+
+#heading {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media (max-width : 570px) {
+    #heading {
+        display: none;
+    }
+}
+
+@media (max-width : 900px) {
+    #light_text {
+        display: none;
+    }
+
+    #dark_text {
+        display: none;
+    }
+
+    .ldt {
+        margin-left: 5.5vw;
+    }
+}
