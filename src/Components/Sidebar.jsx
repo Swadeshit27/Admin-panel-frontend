@@ -9,12 +9,15 @@ import { PiUsersThreeFill } from "react-icons/pi";
 import { FaGear } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import "./Sidebar.css";
+import { useEffect,useState } from "react";
+import { useLocation } from "react-router-dom";
+
 
 const ListItems = [
   {
     name: "dashboard",
     link: "/",
-    active: true,
+    active: false,
     icon: <MdSpaceDashboard size={20} />,
   },
   {
@@ -38,18 +41,24 @@ const ListItems = [
   {
     name: "reports",
     link: "/reports",
-    active: false,
+    active:false,
     icon: <MdReport size={20} />,
   },
   {
     name: "setting",
     link: "/setting",
-    active: false,
+    active:false,
     icon: <FaGear size={20} />,
   },
 ];
 
 const Sidebar = ({ darkMode, toggleDarkMode }) => {
+
+  const [page_path, setPage_path] = useState("");
+  const location = useLocation();
+  useEffect(()=>{
+    setPage_path(location.pathname);
+  },[location]);
 
   return (
     <div className="w-full h-full bg-white dark:bg-[#1e2136] border-r-2 border-gray-600 dark:border-[#1e2136] ">
@@ -69,7 +78,7 @@ const Sidebar = ({ darkMode, toggleDarkMode }) => {
           <Link
             to={item.link}
             key={i}
-            className={`flex items-center  font-medium  text-gray-700 dark:text-gray-300 ${item.active && "bg-slate-600/40 dark:bg-slate-400/40"
+            className={`flex items-center  font-medium  text-gray-700 dark:text-gray-300 ${page_path===item.link? "bg-slate-600/40 dark:bg-slate-400/40":""
               } py-2 ps-6 my-2 cursor-pointer rounded-md`}
           >
             {item.icon}
