@@ -1,6 +1,7 @@
 
 import React, { useState } from "react";
 import Layout from "../Components/Layout";
+import Modal from "react-modal";
 import "./Products.css"; 
 
 const Products = () => {
