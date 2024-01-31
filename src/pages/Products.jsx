@@ -1,6 +1,5 @@
 
 import React, { useState } from "react";
-import Modal from "react-modal";
 import Layout from "../Components/Layout";
 import "./Products.css"; 
 
