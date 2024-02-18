@@ -1,10 +1,13 @@
 
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Form() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [detailsEntered, setDetailsEntered] = useState(true);
+
+    const navigate = useNavigate();
 
     const handleLogin = () => {
         if (email.trim() === '' || password.trim() === '') {
@@ -16,8 +19,9 @@ export default function Form() {
     };
 
     const handleLogout = () => {
-        window.location.href = '/signup';
+        navigate('/');
     };
+
 
     return (
         <div className='w-11/12 max-w-[700px] px-10 py-20 rounded-3xl bg-white border-2 border-gray-100'>
